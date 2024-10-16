@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <style>
+        body {
+            background-color: lightgrey;
+            margin: 0;
+            padding: 0;
+        }
+
+        .logout-button {
+            position: absolute;
+            width: 75px;
+            top: 20px;
+            right: 20px;
+            padding: 10px 10px;
+            background-color: #968584;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .logout-button:hover {
+            background-color: #d32f2f;
+        }
+
+        .show-info-button {
+            margin-top: 20px;
+            padding: 10px 10px;
+            background-color: #8daed4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }   
+
+        .information {
+            display: none;
+            margin-top: 20px;
+        }
+
+        .button {
+            margin-top: 20px;
+            padding: 10px 10px;
+            background-color: #8daed4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <img src="img/tu-logo.png" alt="TU LOGO" class="image">
+    <div class="homepage-container" style="text-align: center;">
+        <h1>Welcome</h1>
+        <p id="nameTH"></p>
+        <button class="show-info-button" onclick="showInfo()">Show Information</button>
+        <div class="information">
+            <p id="nameEN"></p>
+            <p id="type"></p>
+            <p id="UID"></p>
+            <p id="faculty"></p>
+            <p id="department"></p>
+            <p id="email"></p>
+            <p id="statusid"></p>
+            <p id="tu_status"></p>
+        </div>
+        <button onclick="createNewRequest()" class="button">เขียนคำร้อง</button>
+        <button onclick="viewRequestHistory()" class="button">ดูประวัติการยื่นคำร้อง</button>
+        <button onclick="logout()" class="logout-button">Logout</button>
+    </div>
+    <script src="js/scriptHomePage.js"></script>
+</body>
+</html>

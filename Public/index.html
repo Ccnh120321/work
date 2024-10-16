@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            background: linear-gradient(90deg, rgb(255, 0, 0), rgb(255, 128, 0), rgb(255, 255, 0), rgb(255, 128, 0), rgb(255, 0, 0));
+            background-size: 300% 300%;
+            animation: smoothRGB 10s infinite linear;
+        }
+
+        @keyframes smoothRGB {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    </style>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <img src="img/tu-logo.png" alt="TU LOGO" class="image">
+    <h1 class="RQ">REQUEST FORM</h1>
+    <div class="login-container">
+        <h1>Login</h1>
+        <form id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="button" onclick="submitLogin()">Login</button>
+            <button type="button" onclick="call_REST_API_Hello()">Hello</button>
+        </form>
+        <p id="message" style="color: red;"></p>
+        <p id="message2"></p>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

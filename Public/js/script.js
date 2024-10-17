@@ -7,7 +7,11 @@ async function submitLogin() {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
+<<<<<<< HEAD
                 'Application-Key': '',
+=======
+                'Application-Key': 'TUb5c859bda848fcc3d38a278f225fd511194f421143a7f8e68cc0f6b0f24d5b63b751026686b0034767cf7a86ed7d0804',
+>>>>>>> c3cd8d0f65c9d9ec1f37822c25b6c8c67e13a940
             },
             body: JSON.stringify({"UserName": username, "PassWord": password})
         });
@@ -45,7 +49,11 @@ async function call_REST_API_Hello() {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
+<<<<<<< HEAD
                 'Application-Key': '',
+=======
+                'Application-Key': 'TUb5c859bda848fcc3d38a278f225fd511194f421143a7f8e68cc0f6b0f24d5b63b751026686b0034767cf7a86ed7d0804',
+>>>>>>> c3cd8d0f65c9d9ec1f37822c25b6c8c67e13a940
             },
             body: JSON.stringify({"UserName": username, "PassWord": password})
         });
